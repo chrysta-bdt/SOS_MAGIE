@@ -5,4 +5,7 @@ class User < ApplicationRecord
   has_many :reservations, foreign_key: 'patient_id'
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  validates :name, :email, :password, presence: true
+  validates :email, length: { minimum: 6 }
 end
