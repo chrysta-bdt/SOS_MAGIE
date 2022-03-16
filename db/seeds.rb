@@ -38,3 +38,4 @@ service4 = Service.create!(name: 'Manipulation de la Pendule', category: 'money'
 # service10 = Service.create(name: '', category: 'theft', description: '', price: '')
 
 puts "Finished creating seeds!"
+
