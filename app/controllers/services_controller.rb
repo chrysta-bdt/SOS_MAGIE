@@ -12,15 +12,20 @@ class ServicesController < ApplicationController
 		else
 			render :new
 		end
-
-
-	end
-
+  end
+  
+  def index
+    @services = Service.all
+  end
+  
+  def show
+    @service = Service.find(params[:id])
+  end 
+  
 	private
 
   def service_params
    params.require(:service).permit(:name, :category, :description, :price)
   end
-
-
+  
 end
