@@ -2,10 +2,13 @@
   <h1>SOS Magie </h1>
 </div>
 <div class = "container">
-
-  <div class = "card_tags">
-   <%  @services.each do |service| %>
-   <li><%= service.name %></li>
+  <div class = "row">
+    <div class = "col-6">
+      <%  @services.each do |service| %>
+      <div class = "card_tags">
+        <%= service.name %>
+        <span> <%= service.price %> € <span>
+      </div>
     <% end %>
   </div>
 
