@@ -14,7 +14,7 @@ class ServicesController < ApplicationController
 			render :new
 		end
   end
-  
+
   def index
     @services = Service.all
     @love_services = Service.where(category: 'love')
@@ -22,15 +22,15 @@ class ServicesController < ApplicationController
     @conflict_services = Service.where(category: 'conflict')
     @money_services = Service.where(category: 'money')
   end
-  
+
   def show
     @service = Service.find(params[:id])
-  end 
-  
+  end
+
 	private
 
   def service_params
    params.require(:service).permit(:name, :category, :description, :price)
   end
-  
+
 end
