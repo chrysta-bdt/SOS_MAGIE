@@ -1,60 +1,58 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1594396555192-a411562137eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);">
   <div class="container">
     <h1>SOS MAGIE</h1>
-    <p> Il n'y a pas de problème, il n'y a que des solutions.</p>
-    <a class="btn btn-primary" href="#">Suis-moi!</a>
+    <p> Il n'y a pas de problème, que des solutions.</p>
   </div>
 </div>
 
 <div class="container">
-<div class="card-category" >
-
   <div class="row">
-    <h3>Catégorie Love<h3>
+  <a class="btn btn-primary" href="/params[id]">Catégorie Love</a>
     <% @love_services.each do |love_service| %>
-      <div class="card_tags">
-        <%= love_service.name %>
-        <span> <%= love_service.price %> €<span>
-      </div>
-    <% end %>
-  </div>
-  </div>
+      <div class="cards">
 
- <div class="card-category" >
+        <%= render 'services/card', service: love_service %>
+
+        <%= render 'services/card', service: love_service %>
+
+      </div>
+
+    <% end %>
+</div>
 
   <div class="row">
+   <a class="btn btn-primary" href="/params[id]">Catégorie Theft</a>
     <h3>Catégorie Theft<h3>
     <% @theft_services.each do |theft_service| %>
-      <div class="card_tags">
-        <%= theft_service.name %>
-        <span> <%= theft_service.price %> €<span>
+      <div class="cards">
+        <%= render 'services/card', service: theft_service %>
+
+        <%= render 'services/card', service: theft_service %>
       </div>
     <% end %>
   </div>
-  </div>
-
- <div class="card-category" >
 
   <div class="row">
+   <a class="btn btn-primary" href="/params[id]">Catégorie Conflict</a>
     <h3>Catégorie Conflict<h3>
     <% @conflict_services.each do |conflict_service| %>
-      <div class="card_tags">
-        <%= conflict_service.name %>
-        <span> <%= conflict_service.price %> €<span>
+       <div class="cards">
+        <%= render 'services/card', service: conflict_service %>
+
+        <%= render 'services/card', service: conflict_service %>
       </div>
     <% end %>
   </div>
-  </div>
-
-<div class="card-category" >
 
   <div class="row">
-    <h3>Catégorie Love<h3>
+   <a class="btn btn-primary" href="/params[id]">Catégorie money</a>
+
     <% @money_services.each do |money_service| %>
-      <div class="card_tags">
-        <%= money_service.name %>
-        <span> <%= money_service.price %> €<span>
+       <div class="cards">
+        <%= render 'services/card', service: money_service %>
+
+        <%= render 'services/card', service: money_service %>
       </div>
     <% end %>
   </div>
-  </div>
+</div>
