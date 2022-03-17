@@ -1,12 +1,14 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1594396555192-a411562137eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);">
   <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-primary" href="#">Apply now</a>
+    <h1>SOS MAGIE</h1>
+    <p> Il n'y a pas de problème, il n'y a que des solutions.</p>
+    <a class="btn btn-primary" href="#">Suis-moi!</a>
   </div>
 </div>
 
 <div class="container">
+<div class="card-category" >
+
   <div class="row">
     <h3>Catégorie Love<h3>
     <% @love_services.each do |love_service| %>
@@ -16,6 +18,9 @@
       </div>
     <% end %>
   </div>
+  </div>
+
+ <div class="card-category" >
 
   <div class="row">
     <h3>Catégorie Theft<h3>
@@ -26,6 +31,9 @@
       </div>
     <% end %>
   </div>
+  </div>
+
+ <div class="card-category" >
 
   <div class="row">
     <h3>Catégorie Conflict<h3>
@@ -36,9 +44,12 @@
       </div>
     <% end %>
   </div>
+  </div>
 
-<div class="row">
-    <h3>Catégorie Money<h3>
+<div class="card-category" >
+
+  <div class="row">
+    <h3>Catégorie Love<h3>
     <% @money_services.each do |money_service| %>
       <div class="card_tags">
         <%= money_service.name %>
@@ -46,4 +57,4 @@
       </div>
     <% end %>
   </div>
-</div>
+  </div>
