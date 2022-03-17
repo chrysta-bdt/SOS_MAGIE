@@ -1,0 +1,9 @@
+<div class="card-trip">
+  <%= image_tag service.image_url %>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= service.name %></h2>
+    </div>
+    <h2 class="card-trip-pricing"><%= number_to_currency(service.price, unit: '€') %></h2>
+  </div>
+</div>
