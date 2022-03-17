@@ -1,12 +1,49 @@
 <div class="banner">
-  <h1>SOS Magie </h1>
+  <div class="container">
+    <h1>SOS Magie </h1>
+  </div> 
 </div>
-<div class = "container">
-
-  <div class = "card_tags">
-   <%  @services.each do |service| %>
-   <li><%= service.name %></li>
+<div class="container">
+  <div class="row">
+    <h3>Catégorie Love<h3>
+    <% @love_services.each do |love_service| %>
+      <div class="card_tags">
+        <%= love_service.name %>
+        <span> <%= love_service.price %> €<span>
+      </div>
     <% end %>
   </div>
+
+  <div class="row">
+    <h3>Catégorie Theft<h3>
+    <% @theft_services.each do |theft_service| %>
+      <div class="card_tags">
+        <%= theft_service.name %>
+        <span> <%= theft_service.price %> €<span>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <h3>Catégorie Conflict<h3>
+    <% @conflict_services.each do |conflict_service| %>
+      <div class="card_tags">
+        <%= conflict_service.name %>
+        <span> <%= conflict_service.price %> €<span>
+      </div>
+    <% end %>
+  </div>
+
+<div class="row">
+    <h3>Catégorie Money<h3>
+    <% @money_services.each do |money_service| %>
+      <div class="card_tags">
+        <%= money_service.name %>
+        <span> <%= money_service.price %> €<span>
+      </div>
+    <% end %>
+  </div>
+
+
 
 </div>

@@ -17,6 +17,10 @@ class ServicesController < ApplicationController
   
   def index
     @services = Service.all
+    @love_services = Service.where(category: 'love')
+    @theft_services = Service.where(category: 'theft')
+    @conflict_services = Service.where(category: 'conflict')
+    @money_services = Service.where(category: 'money')
   end
   
   def show
