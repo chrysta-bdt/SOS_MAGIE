@@ -1,0 +1,47 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "https://us.123rf.com/450wm/higyou/higyou1703/higyou170300034/74684881-poup%C3%A9e-poup%C3%A9e-vaudou-noir-illustration-vectorielle-vertical-isol%C3%A9.jpg?ver=6" %>
+      <span class="trademark">SOS Magie</span>
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to "Love", "/loves", class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Theft", "/thefts", class: "nav-link" %>
+          </li>
+           <li class="nav-item active">
+            <%= link_to "Conflict", "/conflicts", class: "nav-link" %>
+          </li>
+           </li>
+           <li class="nav-item active">
+            <%= link_to "Money", "/moneys", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%  link_to "Messages", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/SubrinaJ", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to "Page d'accueil", "/", class: "dropdown-item" %>
+              <% link_to "Another action", "#", class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

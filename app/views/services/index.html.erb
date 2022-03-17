@@ -8,6 +8,7 @@
 <div class="container">
   <div class="row">
   <a class="btn btn-primary" href="/params[id]">Catégorie Love</a>
+
     <% @love_services.each do |love_service| %>
       <div class="cards">
 
@@ -21,6 +22,7 @@
 </div>
 
   <div class="row">
+    
    <a class="btn btn-primary" href="/params[id]">Catégorie Theft</a>
     <h3>Catégorie Theft<h3>
     <% @theft_services.each do |theft_service| %>
@@ -33,8 +35,10 @@
   </div>
 
   <div class="row">
+    
    <a class="btn btn-primary" href="/params[id]">Catégorie Conflict</a>
     <h3>Catégorie Conflict<h3>
+
     <% @conflict_services.each do |conflict_service| %>
        <div class="cards">
         <%= render 'services/card', service: conflict_service %>
@@ -44,8 +48,13 @@
     <% end %>
   </div>
 
+
+<div class="row">
+    
+
   <div class="row">
    <a class="btn btn-primary" href="/params[id]">Catégorie money</a>
+
 
     <% @money_services.each do |money_service| %>
        <div class="cards">
