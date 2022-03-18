@@ -7,52 +7,42 @@
 
 <div class="container">
   <div class="row">
-  <a class="btn btn-primary" href="/params[id]">Catégorie Love</a>
-    <% @love_services.each do |love_service| %>
-      <div class="cards">
 
-        <%= render 'services/card', service: love_service %>
-
-        <%= render 'services/card', service: love_service %>
-
-      </div>
-
-    <% end %>
+    <div class="cards">
+      <% @love_services.each do |love_service| %>
+        <%= link_to service_path(love_service) do %>
+          <%= render 'services/card', service: love_service %>
+        <% end %>
+      <% end %>
+    </div>
 </div>
 
-  <div class="row">
-   <a class="btn btn-primary" href="/params[id]">Catégorie Theft</a>
-    <h3>Catégorie Theft<h3>
-    <% @theft_services.each do |theft_service| %>
-      <div class="cards">
-        <%= render 'services/card', service: theft_service %>
-
-        <%= render 'services/card', service: theft_service %>
+    <div class="row">
+    <div class="cards">
+      <% @theft_services.each do |theft_service| %>
+        <%= link_to service_path(theft_service) do %>
+          <%= render 'services/card', service: theft_service %>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
+    </div>
+
+  <div class="row">
+    <div class="cards">
+      <% @conflict_services.each do |conflict_service| %>
+        <%= link_to service_path(conflict_service) do %>
+          <%= render 'services/card', service: conflict_service %>
+          <% end %>
+        <% end %>
+      </div>
   </div>
 
   <div class="row">
-   <a class="btn btn-primary" href="/params[id]">Catégorie Conflict</a>
-    <h3>Catégorie Conflict<h3>
-    <% @conflict_services.each do |conflict_service| %>
-       <div class="cards">
-        <%= render 'services/card', service: conflict_service %>
-
-        <%= render 'services/card', service: conflict_service %>
+    <div class="cards">
+      <% @money_services.each do |money_service| %>
+        <%= link_to service_path(money_service) do %>
+          <%= render 'services/card', service: money_service %>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-
-  <div class="row">
-   <a class="btn btn-primary" href="/params[id]">Catégorie money</a>
-
-    <% @money_services.each do |money_service| %>
-       <div class="cards">
-        <%= render 'services/card', service: money_service %>
-
-        <%= render 'services/card', service: money_service %>
-      </div>
-    <% end %>
-  </div>
 </div>

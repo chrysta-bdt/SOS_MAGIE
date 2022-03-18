@@ -5,11 +5,11 @@ class ServicesController < ApplicationController
 	end
 
 	def create
-		service = Service.new(params[:service])
-    service.save
+		@service = Service.new(service_params)
+    @service.save
 
-		if service.save
-			redirect_to services
+		if @service.save
+			redirect_to services_path
 		else
 			render :new
 		end
@@ -25,6 +25,22 @@ class ServicesController < ApplicationController
 
   def show
     @service = Service.find(params[:id])
+  end
+
+  def indexlove
+    @love_services = Service.where(category: 'love')
+  end
+
+  def indextheft
+    @theft_services = Service.where(category: 'theft')
+  end
+
+  def indexconflict
+    @conflict_services = Service.where(category: 'conflict')
+  end
+
+  def indexmoney
+    @money_services = Service.where(category: 'money')
   end
 
 	private

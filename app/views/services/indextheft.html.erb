@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+     <div class="cards">
+      <% @theft_services.each do |theft__service| %>
+        <%= link_to service_path(theft__service) do %>
+          <%= render 'services/card', service: theft__service %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
