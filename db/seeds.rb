@@ -38,12 +38,6 @@ service10 = Service.create!(name: "Mariage spirituel", category: 'love',
                           description: "Officialisé par HARRY POTTER, ce rituel de mariage comblera les couples voulant s'unir aux forces de la nature pendant leur cérémonie enchanté..",
                           price: 1000, witch: user10, image_url: "https://www.hazlewood-castle.co.uk/storage//uploads/variants/119/wed29-1.jpg")
 
-
-service2 = Service.create!(name: "Préparation de potion d'amour", category: 'love',
-                          description: "Cette potion touche à toutes les facettes de l’amour : la douceur des sentiments à travers ses arômes fruités de cerises et le côté piquant de la passion avec ses pincées de piment qui viendront réchauffer doucement les papilles et le coeur de votre bien aimé(e). (1 flacon de 100 ml).",
-                          price: 75, witch: user2, image_url: "https://images.immediate.co.uk/production/volatile/sites/7/2013/02/GettyImages-503196822_Shy-714baa1.jpg?quality=90&resize=620,413")
-
-
 service3 = Service.create!(name: 'Lecture de boule de cristal', category: 'theft',
                           description: "Vous connaitrez l'identité de celui qui vous vol (une séance de 30 minutes).",
                           price: 150, witch: user3, image_url: "https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80")
@@ -60,15 +54,7 @@ service6 = Service.create!(name: 'Livre de recettes magiques', category: 'confli
                           description: 'Un livre de recettes magiques qui permettre de calmer tous types de conflits(mariage, travail, famille...). ',
                           price: 200, witch: user6, image_url: "https://cdn.myonlinestore.eu/930d50f2-fed9-46b9-9d1e-ce811954cdc8/image/cache/full/e418afc142d0a25970a3f646544265caf87c5d96.jpg")
 
-
-service6 = Service.create!(name: 'Livre de recettes magiques', category: 'conflict',
-                          description: 'Un livre de recettes magiques qui permettre de calmer tous types de conflits(mariage, travail, famille...). ',
-                          price: 200, witch: user6, image_url: "https://cdn.myonlinestore.eu/930d50f2-fed9-46b9-9d1e-ce811954cdc8/image/cache/full/e418afc142d0a25970a3f646544265caf87c5d96.jpg")
-
-service7 = Service.create!(name: 'Manipulation de le Pendule', category: 'money',
-
 service7 = Service.create!(name: 'Manipulation de Pendule', category: 'money',
-
                           description: 'Découvrez comment réussir votre vie grace à notre pendule âgé deplus de 500 ans. (une séance de 30 minutes)',
                           price: 100, witch: user7, image_url: "https://images.unsplash.com/photo-1616785550406-0fd04cac3c24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80)")
 
@@ -76,13 +62,6 @@ service8 = Service.create!(name: "Rituel pour attirer l'argent", category: 'mone
                           description: "Un rituel qui consiste d'incantations puissantes qui vous permettra d'être propriétaire d'un arbre d'argent (Efficacité dans une semaine)",
                           price: 500, witch: user8, image_url: "https://avaazdo.s3.amazonaws.com/f09905871aa2cba81b04ec72d0cbae6d.jpg")
 
-
-service7 = Service.create!(name: 'Manipulation de le Pendule', category: 'money',
-                          description: 'Découvrez comment réussir votre vie grace à notre pendule âgé deplus de 500 ans. (une séance de 30 minutes)',
-                          price: 100, witch: user7, image_url: "https://images.unsplash.com/photo-1616785550406-0fd04cac3c24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80)")
-service8 = Service.create!(name: "Rituel pour attirer l'argent", category: 'money',
-                          description: "Un rituel qui consiste d'incantations puissantes qui vous permettra d'être propriétaire d'un arbre d'argent (Efficacité dans une semaine)",
-                          price: 500, witch: user8, image_url: "https://avaazdo.s3.amazonaws.com/f09905871aa2cba81b04ec72d0cbae6d.jpg")
 # service5 = Service.create(name: '', category: 'theft', description: '', price: '')
 # service6 = Service.create(name: '', category: 'conflict', description: '', price: '')
 # service7 = Service.create(name: '', category: 'money', description: '', price: '')
