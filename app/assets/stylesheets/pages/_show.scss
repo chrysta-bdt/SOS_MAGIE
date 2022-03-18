@@ -24,12 +24,11 @@
 
   .containershow .card {
     position: relative;
-    max-width : 500px;
+    // max-width : 500px;
     height : 215px;
     background-color : #fff;
     margin : 30px 10px;
     padding : 20px 15px;
-
     display : flex;
     flex-direction : column;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
@@ -38,7 +37,7 @@
   }
 
   .containershow .card:hover {
-        height : 320px;
+      height : 320px;
     }
 
   .containershow .card .image {
@@ -51,7 +50,6 @@
     z-index : 1;
     border-radius: 15px;
   }
-
 
   .containershow .card .image img {
     max-width : 100%;
