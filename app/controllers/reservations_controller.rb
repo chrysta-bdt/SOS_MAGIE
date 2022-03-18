@@ -11,7 +11,7 @@ class ReservationsController < ApplicationController
 		@reservation.patient = @patient
 		@reservation.service = @service
 		if @reservation.save
-			redirect_to root_path, notice: 'Yeaaah! Votre réservation a bien été prise en compte'
+			redirect_to root_path, notice: 'Yeaaah! Votre réservation a bien été prise en compte 😱'
 		else
 			render :new
 		end
