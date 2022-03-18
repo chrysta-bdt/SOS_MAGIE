@@ -11,7 +11,7 @@
           <h3><%= @service.price %></h3>
         </div>
       </div>
-      <a class="btn btn-primary position-absolute top-100 start-50 translate-middle btn-block" href="/services/:service_id/reservations/new">réserve-moi!</a>
+      <%= link_to 'Réserve-moi!', new_service_reservation_path(@service), class: "btn btn-primary position-absolute top-100 start-50 translate-middle btn-block" %>
     </div>
   </div>
 </div>
