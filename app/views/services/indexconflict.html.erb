@@ -1,12 +1,11 @@
 <div class="container">
   <div class="row">
-    <% @conflict_services.each do |conflict_service| %>
-      <div class="cards">
-
-        <%= render 'services/card', service: conflict_service %>
-
-        <%= render 'services/card', service: conflict_service %>
-
-      </div>
-
-    <% end %>
+   <div class="cards">
+      <% @conflict_services.each do |conflict_service| %>
+        <%= link_to service_path(conflict_service) do %>
+          <%= render 'services/card', service: conflict_service %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

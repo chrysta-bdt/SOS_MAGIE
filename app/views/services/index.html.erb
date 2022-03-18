@@ -1,67 +1,48 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1594396555192-a411562137eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);">
   <div class="container">
     <h1>SOS MAGIE</h1>
-    <p> Il n'y a pas de problèmes, que des solutions.</p>
+    <p> Il n'y a pas de problème, que des solutions.</p>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-  <a class="btn btn-primary" href="/services/love">Catégorie Love</a>
 
-    <% @love_services.each do |love_service| %>
-      <div class="cards">
-
-        <%= render 'services/card', service: love_service %>
-
-        <%= render 'services/card', service: love_service %>
-
-      </div>
-
-    <% end %>
+    <div class="cards">
+      <% @love_services.each do |love_service| %>
+        <%= link_to service_path(love_service) do %>
+          <%= render 'services/card', service: love_service %>
+        <% end %>
+      <% end %>
+    </div>
 </div>
 
-  <div class="row">
-    
-   <a class="btn btn-primary" href="/services/theft">Catégorie Theft</a>
-    <h3>Catégorie Theft<h3>
-    <% @theft_services.each do |theft_service| %>
-      <div class="cards">
-        <%= render 'services/card', service: theft_service %>
-
-        <%= render 'services/card', service: theft_service %>
+    <div class="row">
+    <div class="cards">
+      <% @theft_services.each do |theft_service| %>
+        <%= link_to service_path(theft_service) do %>
+          <%= render 'services/card', service: theft_service %>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
+    </div>
+
+  <div class="row">
+    <div class="cards">
+      <% @conflict_services.each do |conflict_service| %>
+        <%= link_to service_path(conflict_service) do %>
+          <%= render 'services/card', service: conflict_service %>
+          <% end %>
+        <% end %>
+      </div>
   </div>
 
   <div class="row">
-    
-   <a class="btn btn-primary" href="/services/conflict">Catégorie Conflict</a>
-    <h3>Catégorie Conflict<h3>
-
-    <% @conflict_services.each do |conflict_service| %>
-       <div class="cards">
-        <%= render 'services/card', service: conflict_service %>
-
-        <%= render 'services/card', service: conflict_service %>
+    <div class="cards">
+      <% @money_services.each do |money_service| %>
+        <%= link_to service_path(money_service) do %>
+          <%= render 'services/card', service: money_service %>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-
-
-<div class="row">
-    
-
-  <div class="row">
-   <a class="btn btn-primary" href="/services/money">Catégorie money</a>
-
-
-    <% @money_services.each do |money_service| %>
-       <div class="cards">
-        <%= render 'services/card', service: money_service %>
-
-        <%= render 'services/card', service: money_service %>
-      </div>
-    <% end %>
-  </div>
 </div>
