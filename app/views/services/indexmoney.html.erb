@@ -1,12 +1,11 @@
 <div class="container">
   <div class="row">
-    <% @money_services.each do |money_service| %>
-      <div class="cards">
-
-        <%= render 'services/card', service: money_service %>
-
-        <%= render 'services/card', service: money_service %>
-
-      </div>
-
-    <% end %>
+     <div class="cards">
+      <% @money_services.each do |money__service| %>
+        <%= link_to service_path(money__service) do %>
+          <%= render 'services/card', service: money__service %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
