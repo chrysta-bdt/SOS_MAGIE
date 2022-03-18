@@ -13,17 +13,17 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Love", "/loves", class: "nav-link" %>
+            <%= link_to "Love", "/services/love", class: "nav-link" %>
           </li>
           <li class="nav-item active">
-            <%= link_to "Theft", "/thefts", class: "nav-link" %>
+            <%= link_to "Theft", "/services/theft", class: "nav-link" %>
           </li>
            <li class="nav-item active">
-            <%= link_to "Conflict", "/conflicts", class: "nav-link" %>
+            <%= link_to "Conflict", "/services/conflict", class: "nav-link" %>
           </li>
            </li>
            <li class="nav-item active">
-            <%= link_to "Money", "/moneys", class: "nav-link" %>
+            <%= link_to "Money", "/services/money", class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%  link_to "Messages", "#", class: "nav-link" %>

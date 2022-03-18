@@ -26,6 +26,22 @@ class ServicesController < ApplicationController
   def show
     @service = Service.find(params[:id])
   end 
+
+  def indexlove
+    @love_services = Service.where(category: 'love')
+  end
+
+  def indextheft
+    @theft_services = Service.where(category: 'theft')
+  end
+
+  def indexconflict
+    @conflict_services = Service.where(category: 'conflict')
+  end
+
+  def indexmoney
+    @money_services = Service.where(category: 'money')
+  end
   
 	private
 

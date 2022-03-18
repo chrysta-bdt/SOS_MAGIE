@@ -25,7 +25,7 @@ service2 = Service.create!(name: 'Lecture de boule de crystal', category: 'theft
 service3 = Service.create!(name: 'Création de poupée', category: 'conflict',
                           description: 'Prenez le control de ta cible et arrivez à votre fin',
                           price: 200, witch: user3, image_url: "https://www.creativeboom.com/uploads/articles/68/68c108d28851f4d15db365810fdefc15c769d35c_810.jpeg")
-service4 = Service.create!(name: 'Manipulation de la Pendule', category: 'money',
+service4 = Service.create!(name: 'Manipulation du Pendule', category: 'money',
                           description: 'Découvrez comment réussir votre vie (une séance de 30 minutes)',
                           price: 100, witch: user4, image_url: "https://images.unsplash.com/photo-1616785550406-0fd04cac3c24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80)")
 
