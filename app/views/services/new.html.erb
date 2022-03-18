@@ -8,13 +8,13 @@
 			<h1>Créer un nouveau service<h1>
 
 			<%= simple_form_for(@service) do |f| %>
-			<p><%= f.label :name %></p>
-			<p><%= f.text_field :name %></p>
-			<p><%= f.input :category, collection: Service::CATEGORIES %></p>
-			<p><%= f.label :description %></p>
-			<p><%= f.text_field :description %></p>
-			<p><%= f.submit %></p>
+				<%= f.input :name, label: false, placeholder: 'Name' %>
+				<%= f.input :category, collection: Service::CATEGORIES, label: false, prompt: 'Choose a category' %>
+				<%= f.input :description, label: false, placeholder: 'Description' %>
+				<%= f.submit class: 'btn btn-primary' %>
 			<% end %>
+
+			<%= link_to 'Back to home', '/', class: 'btn btn-outline-primary' %>
 		</div>
 	</div>
 </div>

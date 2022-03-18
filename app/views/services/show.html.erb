@@ -1,12 +1,16 @@
-
-<div class="banner"></div>
-<div class="container text-center">
-   <div>
-     <h1><%= @service.name %></h1>
-     <h1><%= @service.description %></h1>
-   </div>
-   <div>
-     <h1><%= @service.price %></h1>
-   </div>
-
-</div>
+<div class="bodyshow">
+  <div class="show">
+    <div class="containershow">  
+      <div class = card>
+        <div class = image>
+          <img href = "#" src =<%= @service.image_url %> width=200px height=200px>
+        </div>
+        <div class = content>
+          <h3><%= @service.name %></h3>
+          <p><%= @service.description %></p>
+          <h3><%= @service.price %></h3>
+        </div>
+      </div>
+    </div>
+  </div>    
+</div>  
