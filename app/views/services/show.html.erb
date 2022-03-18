@@ -1,17 +1,17 @@
 <div class="bodyshow">
   <div class="showsosmagie">
     <div class="containershow">
-      <div class = card>
-        <div class = image>
+      <div class="card">
+        <div class="image">
           <img href = "#" src =<%= @service.image_url %> width=200px height=200px>
         </div>
-        <div class = content>
+        <div class="content">
           <h3><%= @service.name %></h3>
-          <p><%= @service.description %></p>
+          <p class='small-text'><%= @service.description %></p>
           <h3><%= @service.price %></h3>
         </div>
       </div>
-      <a class="btn btn-primary position-absolute top-100 start-50 translate-middle btn-block" href="#">réserve-moi!</a>
+      <a class="btn btn-primary position-absolute top-100 start-50 translate-middle btn-block" href="/services/:service_id/reservations/new">réserve-moi!</a>
     </div>
   </div>
 </div>
