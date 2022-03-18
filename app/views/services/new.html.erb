@@ -11,6 +11,7 @@
 				<%= f.input :name, label: false, placeholder: 'Name' %>
 				<%= f.input :category, collection: Service::CATEGORIES, label: false, prompt: 'Choose a category' %>
 				<%= f.input :description, label: false, placeholder: 'Description' %>
+				<%= f.input :price %>
 				<%= f.submit class: 'btn btn-primary' %>
 			<% end %>
 
