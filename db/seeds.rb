@@ -22,7 +22,7 @@ user8 = User.create!(name: 'Daniel Basil', email: 'danielbasil@orange.fr', passw
 
 puts "Creating service seeds...."
 
-service1 = Service.create!(name: 'Tirage des cartes', category: 'love',
+service1 = Service.create!(name: 'Tirage des cartes Tarot', category: 'love',
                           description: "Des questions sur votre vie sentimentale ? Le tarot de l'amour vous donnera des pistes sur vous, sur votre partenaire et votre duo. Ainsi, vous aurez toutes les clés pour vous aider à mieux interpréter les signes de votre vie amoureuse. Que vous soyez célibataire ou en couple, le jeu de tarot amoureux vous révélera tous les secrets de votre avenir amoureux. (une séance de 30 minutes).",
                           price: 50, witch: user1, image_url: "https://parade.com/wp-content/uploads/2021/10/Tarot-Cards-Feat.jpg")
 
@@ -30,7 +30,7 @@ service2 = Service.create!(name: "Préparation de potion d'amour", category: 'lo
                           description: "Cette potion touche à toutes les facettes de l’amour : la douceur des sentiments à travers ses arômes fruités de cerises et le côté piquant de la passion avec ses pincées de piment qui viendront réchauffer doucement les papilles et le coeur de votre bien aimé(e). (1 flacon de 100 ml).",
                           price: 75, witch: user2, image_url: "https://images.immediate.co.uk/production/volatile/sites/7/2013/02/GettyImages-503196822_Shy-714baa1.jpg?quality=90&resize=620,413")
 
-service3 = Service.create!(name: 'Lecture de boule de crystal', category: 'theft',
+service3 = Service.create!(name: 'Lecture de boule de cristal', category: 'theft',
                           description: "Vous connaitrez l'identité de celui qui vous vol (une séance de 30 minutes).",
                           price: 150, witch: user3, image_url: "https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80")
 
@@ -39,14 +39,14 @@ service4 = Service.create!(name: "Jeter un mauvais sort (malédiction)", categor
                           price: 250, witch: user4, image_url: "https://i.ytimg.com/vi/itH5xyVqMDE/maxresdefault.jpg")
 
 service5 = Service.create!(name: 'Création de poupée', category: 'conflict',
-                          description: 'Prenez le control de ta cible et arrivez à votre fin. ',
+                          description: 'Prenez le control de ta cible et arrivez à votre fin.(efficacité en moins de 24 heures) ',
                           price: 300, witch: user5, image_url: "https://www.creativeboom.com/uploads/articles/68/68c108d28851f4d15db365810fdefc15c769d35c_810.jpeg")
 
 service6 = Service.create!(name: 'Livre de recettes magiques', category: 'conflict',
                           description: 'Un livre de recettes magiques qui permettre de calmer tous types de conflits(mariage, travail, famille...). ',
                           price: 200, witch: user6, image_url: "https://cdn.myonlinestore.eu/930d50f2-fed9-46b9-9d1e-ce811954cdc8/image/cache/full/e418afc142d0a25970a3f646544265caf87c5d96.jpg")
 
-service7 = Service.create!(name: 'Manipulation de le Pendule', category: 'money',
+service7 = Service.create!(name: 'Manipulation de Pendule', category: 'money',
                           description: 'Découvrez comment réussir votre vie grace à notre pendule âgé deplus de 500 ans. (une séance de 30 minutes)',
                           price: 100, witch: user7, image_url: "https://images.unsplash.com/photo-1616785550406-0fd04cac3c24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80)")
 
