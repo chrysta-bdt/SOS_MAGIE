@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <% @money_services.each do |money_service| %>
+      <div class="cards">
+
+        <%= render 'services/card', service: money_service %>
+
+        <%= render 'services/card', service: money_service %>
+
+      </div>
+
+    <% end %>
